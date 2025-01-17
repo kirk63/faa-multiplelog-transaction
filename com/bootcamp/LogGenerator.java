@@ -70,7 +70,7 @@ public class LogGenerator {
         int infologs = random.nextInt(10);
         
         for (int i = 0; i < infologs; i++) {
-            String dttransid = new SimpleDateFormat("yyyyMMdd").format(new Date()) + "DYNATRANSACTION" + (random.nextInt(100000) * random.nextInt(100000));
+            String dttransid = new SimpleDateFormat("yyyyMMdd").format(new Date()) + "FAATRANSACTION" + (random.nextInt(100000) * random.nextInt(100000));
             String pmdwid = generateRandomString(13);
             String revenue = random.nextInt(100) + "." + random.nextInt(100);
             String inittime = getCurrentTimestamp();
