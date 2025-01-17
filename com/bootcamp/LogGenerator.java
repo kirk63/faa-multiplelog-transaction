@@ -107,7 +107,7 @@ public class LogGenerator {
         if (errorgen % 10 == 3 || errorgen % 10 == 7) {
             for (int i = 0; i < errorlogs; i++) {
                 String errortime = getCurrentTimestamp();
-                String dterrorid = new SimpleDateFormat("yyyyMMdd").format(new Date()) + "DYNATRANSACTION" + (random.nextInt(100000) * random.nextInt(100000));
+                String dterrorid = new SimpleDateFormat("yyyyMMdd").format(new Date()) + "FAATRANSACTION" + (random.nextInt(100000) * random.nextInt(100000));
                 processDeviceError("ERROR-DEVICE01.xml", "processor-01.log", dterrorid, errortime);
             }
         }
